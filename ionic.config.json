@@ -1,0 +1,7 @@
+{
+  "name": "com.spececoserv.ofctr",
+  "type": "custom",
+  "integrations": {
+    "cordova": {}
+  }
+}
