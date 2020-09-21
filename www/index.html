@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="format-detection" content="telephone=no" />
+      <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+      <link rel="shortcut icon" href="favicon.ico" />
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+      
+      <!-- jQuery Mobile -->
+      <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!--<script src="jquery-1.9.1.min.js"></script>-->
+      <script src="jquery.mobile-1.4.5.min.js"></script>
+      
+      <!-- jDrupal -->
+      <script type="text/javascript" charset="utf-8" src="jdrupal-7.0.5.min.js"></script>
+      
+      <!-- DrupalGap -->
+      <script type="text/javascript" charset="utf-8" src="bin/drupalgap.js"></script>
+      <script type="text/javascript" charset="utf-8" src="app/settings.js"></script>
+      <script type="text/javascript" charset="utf-8" src="app/modules/custom/s_front_page/jquery.mask.min.js"></script>
+      <link rel="stylesheet" href="css/drupalgap.css" />
+      <link rel="stylesheet" href="css/s_module.css" />
+
+    </head>
+    <body class="s-dark-theme">
+
+      <!-- Mobile Application Splash Screen -->
+      <div id="_drupalgap_splash" data-role="page">
+         <div data-role="header" data-theme="b"></div>
+         <div class="ui-content" data-role="content">
+            <div id="_drupalgap_splash_content">
+				<div class="s-app-loading-page-wrapper">
+					<div class="s-app-loading-logo-wrapper">
+						
+					</div>
+					<div class="s-app-loading-text-wrapper">
+						Один момент.<br />
+						Приложение загружает данные
+					</div>
+				</div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Load PhoneGap (Cordova) -->
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" charset="utf-8" src="bin/fc.js"></script>
+
+      <!-- Load DrupalGap -->
+      <script type="text/javascript">
+        drupalgap_onload();
+      </script>
+		<span class="s-app-bg-overlay"></span>
+    </body>
+</html>
